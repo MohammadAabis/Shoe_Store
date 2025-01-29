@@ -1,0 +1,51 @@
+/* =========================== Image Test ================================== */
+
+.grid-container{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    border: 2px solid gray;
+    
+}
+
+.grid-container > div {
+    border: 2px solid antiquewhite;
+    text-align: center;
+    
+}
+
+.grid-container .test {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.test img{
+    width: 100%;
+    height: 100%;
+}
+
+.image-class img{
+    width: 100%;
+    height: 100%;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .grid-container .test {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+
+}
